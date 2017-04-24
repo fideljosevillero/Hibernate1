@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/04/2017 06:13:44 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Modelo.InfPersonal" table="inf_personal" catalog="db_arkix">
+        <id name="idInfPersonal" type="java.lang.Integer">
+            <column name="id_inf_personal" />
+            <generator class="identity" />
+        </id>
+        <property name="categoria" type="string">
+            <column name="Categoria" length="50" />
+        </property>
+        <property name="asunto" type="string">
+            <column name="asunto" length="40" />
+        </property>
+        <property name="TDocumento" type="string">
+            <column name="t_documento" length="20" />
+        </property>
+        <property name="nombres" type="string">
+            <column name="nombres" length="1000" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="apellidos" length="70" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="70" />
+        </property>
+        <property name="pais" type="java.lang.Integer">
+            <column name="pais" />
+        </property>
+        <property name="depto" type="java.lang.Integer">
+            <column name="depto" />
+        </property>
+        <property name="ciudad" type="java.lang.Integer">
+            <column name="ciudad" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="150" />
+        </property>
+        <property name="documento" type="string">
+            <column name="documento" length="12" />
+        </property>
+        <property name="numCelular" type="string">
+            <column name="num_celular" length="12" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="120" />
+        </property>
+        <property name="comentarios" type="string">
+            <column name="Comentarios" length="200" />
+        </property>
+        <property name="adjuntaArchivo" type="string">
+            <column name="adjunta_archivo" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>
